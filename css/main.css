@@ -1,0 +1,147 @@
+/********* Styles généraux *********/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    color: #2c3e50;
+    background-color: white;
+    background-image: url("../img/backgrounds/1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    opacity: 80%;
+    text-shadow: 2px 2px 2px #2c3e50;
+}
+
+a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    padding: .6rem 1rem;
+    border: none;
+    background-color: #e74c3c;
+    color: white;
+}
+
+button:hover  {
+    background-color: #e74c3c;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: all 0.3s ease;
+}
+
+
+/********* Formulaires *********/
+form {
+    padding: 20px;
+    margin: 2em auto 80px;
+    background-color: rgba(255,255,255,0.8);
+    border: 6px solid #2c3e50;
+    max-width: 450px;
+    min-width: 300px;
+}
+/* Structuration du formulaire avec une liste */
+form ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+form li {
+    list-style: none;
+    margin-bottom: 1.5em;
+}
+/* Suppression de la marge en bas pour le dernier élément du formulaire */
+form li:last-child {
+    margin: 0;
+}
+/* Lables des champs */
+label{
+    display: block;
+    margin-bottom: .5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+/* Style par défaut des champs textes et liste */
+select,
+input,
+textarea {
+    border: 2px solid #2c3e50;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+    background-color: white;
+}
+
+select,
+input:not([type="checkbox"]):not([type="radio"]),
+textarea {
+    width: 100%;
+    padding: 1em;
+}
+
+input[type="email"]:invalid {
+    border-color: #e74c3c;
+}
+
+input[type="email"]:valid {
+    border-color: #27ae60;
+}
+
+/* Pour les radio et checkboxes */
+label input + span {
+    font-weight: normal;
+}
+
+/* Pour les groupes de champs */
+fieldset {
+    padding: 1em;
+    border: 2px solid #2c3e50;
+}
+
+legend {
+    padding: 0 .5em;
+    font-weight: bold;
+}
+
+/* Pour les groupes de radios et checkboxes */
+.input-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+:checked + label,
+:checked + span  {
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    margin-right: 1em;
+}
+
+button[type="submit"] + a {
+    color: #2c3e50;
+}
+
