@@ -19,10 +19,41 @@
 <h1>Mini Form</h1>
 <!-- VOTRE FORMULAIRE -->
 <form action="https://kode.ch/getpost/" method="post">
-    <ul>
+    <ul class="form">
+        <li>
+            <label for="">Arrière-plan</label>
+            <select name="background" id="background">
+                <option value="1.jpg">Arrière-plan 1</option>
+                <option value="2.jpg">Arrière-plan 2</option>
+                <option value="3.jpg">Arrière-plan 3</option>
+                <option value="4.jpg">Arrière-plan 4</option>
+                <option value="5.jpg">Arrière-plan 5</option>
+                <option value="6.jpg" selected>Arrière-plan 6</option>
+                <option value="7.jpg">Arrière-plan 7</option>
+                <option value="8.jpg">Arrière-plan 8</option>
+                <option value="9.jpg">Arrière-plan 9</option>
+                <option value="10.jpg">Arrière-plan 10</option>
+            </select>
+        </li>
+        <li>
+            <fieldset>
+                <legend>Genre</legend>
+                <label>
+                    <input type="radio" name="genre" value="f">
+                    Homme
+                </label>
+                <label>
+                    <input type="radio" name="genre" value="h">
+                    Femme
+                </label>
+            </fieldset>
+        </li>
     <li>
         <label for="email">E-Mail</label>
-        <input id="email" type="email" name="email">
+        <input id="email" type="email" name="email"
+               placeholder="nom.prenom@esig.com"
+               autofocus required
+        >
     </li>
     <li>
         <label for="mdp">Mot de passe</label>
