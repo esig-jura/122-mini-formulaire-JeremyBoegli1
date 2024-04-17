@@ -43,7 +43,7 @@ button[type="reset"] {
 }
 
 /* *********************
-        Forumulaire HTML
+        Formulaire HTML
    *********************
  */
 
@@ -72,6 +72,27 @@ form label {
     margin-bottom: .5em;
     font-weight: bold;
     cursor: pointer;
+}
+
+form label input {
+    display: inline;
+    width: auto;
+}
+
+form fieldset {
+    padding: 1em;
+    border: 2px solid #2c3e50;
+}
+
+form fieldset legend {
+    font-weight: bold;
+    padding: 0 .5em;
+}
+
+
+form fieldset label {
+    display: inline-block;
+    margin-right: 1em;
 }
 
 form input,
